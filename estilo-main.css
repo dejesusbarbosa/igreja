@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: black;
+    padding: 20px;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+header > h1 {
+    color: white;
+    padding-right: 10px;
+    font-size: 2.3em;
+}
+
+.ancoras > a {
+    color: white;
+    text-decoration: none;
+    padding-left: 8px;
+    padding: 8px;
+    transition: all .3s ease;
+}
+
+.ancoras > a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+#sobre-nos, #local {
+    scroll-margin-top: 90px;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+    padding: 12px;
+    font-size: 2.3em;
+    margin: 10px 0px 10px 0px;
+}
+
+.sobre {
+    line-height: 30px;
+    font-size: 1.1em;
+    color: rgb(61, 61, 61);
+    padding: 20px;
+    margin-bottom: 4em;
+}
+
+.hora {
+    line-height: 30px;
+    font-size: 1.1em;
+    color: rgb(61, 61, 61);
+    padding: 20px;
+    margin-bottom: 4em;
+}
+
+.event {
+    line-height: 30px;
+    font-size: 1.1em;
+    color: rgb(61, 61, 61);
+    padding: 20px;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+#orar {
+    background-image: linear-gradient(to right, darkblue, red);
+    height: 100vh;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#orar h2 {
+    font-size: 2.5em;
+}
+
+#orar form {
+    text-align: center;
+}
+
+#orar #txtn1 {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    border: none;
+    padding: 10px;
+    box-shadow: 2px 2px 6px rgba(40, 40, 40, 0.680);
+}
+
+#orar #txtn2 {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    font-size: 1.4em;
+    padding: 10px;
+    resize: none;
+    vertical-align: top;
+    border: none;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 6px rgba(40, 40, 40, 0.680);
+}
+
+#enviar {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 2px solid darkblue;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#local {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+#mapa {
+    height: 500px;
+    width: 90%;
+    max-width: 600px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(40, 40, 40, 0.534);
+}
+
+#compartilha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top, black, rgb(63, 63, 63), rgb(43, 43, 43));
+    height: 90vh;
+}
+
+#compartilha > h2 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30%;
+}
+
+.redes > a {
+    color: white;
+    font-size: 2.2rem;
+    transition: .3s;
+}
+
+.redes #insta:hover {
+    color: #ffa200;
+    transform: scale(1.2);
+}
+
+.redes #face:hover {
+    color: blue;
+    transform: scale(1.2);
+}
+
+.redes #youtube:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+.redes #zap:hover {
+    color: green;
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
+}
